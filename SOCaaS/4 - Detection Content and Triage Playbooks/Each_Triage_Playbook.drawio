@@ -1,0 +1,163 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="Failed RDP Logon" id="0">
+    <mxGraphModel dx="3433" dy="2521" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-10" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="-1080" width="3600" height="3600" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="Start: Failed RDP Logon Alert" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="100" y="-535" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Investigate: • Source IP &amp; username • Repeated attempts?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="100" y="-435" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Repeated attempts from external IP?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="150" y="-305" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Escalate to Tier 2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="50" y="-145" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Close as false positive" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="310" y="-145" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-11" value="Start: GPO Modification Alert" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-535" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-12" value="Investigate: • Which GPO was modified • By whom • Compare against change window" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-435" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-13" value="Change outside window or unauthorized user?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="910" y="-315" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-14" value="Escalate to Tier 2" style="ellipse;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="760" y="-195" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-15" value="Close as authorized change" style="ellipse;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="-195" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-16" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-11" target="nuzdP0fvSrZEVlk6rXL_-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-17" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-12" target="nuzdP0fvSrZEVlk6rXL_-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-18" value="Yes" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-13" target="nuzdP0fvSrZEVlk6rXL_-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-19" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-13" target="nuzdP0fvSrZEVlk6rXL_-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-20" value="Start: PowerShell Encoded Command Alert" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="-505" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-21" value="Investigate: • Review command line (-enc) • Parent process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="-405" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-22" value="Suspicious parent or non-IT user?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="-285" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-23" value="Escalate to Tier 2" style="ellipse;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="-165" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-24" value="Close as legitimate IT script" style="ellipse;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="-165" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-25" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-20" target="nuzdP0fvSrZEVlk6rXL_-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-26" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-21" target="nuzdP0fvSrZEVlk6rXL_-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-27" value="Yes" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-22" target="nuzdP0fvSrZEVlk6rXL_-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-28" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-22" target="nuzdP0fvSrZEVlk6rXL_-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-29" value="Start: LSASS Access Attempt" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="545" y="115" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-30" value="Investigate: • Process accessing lsass.exe • Compare with baseline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="545" y="215" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-31" value="Unknown process or tool?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="545" y="335" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-32" value="Escalate to Tier 2" style="ellipse;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="435" y="455" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-33" value="Close as legitimate security tool" style="ellipse;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="695" y="455" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-34" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-29" target="nuzdP0fvSrZEVlk6rXL_-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-35" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-30" target="nuzdP0fvSrZEVlk6rXL_-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-36" value="Yes" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-31" target="nuzdP0fvSrZEVlk6rXL_-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-37" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-31" target="nuzdP0fvSrZEVlk6rXL_-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-38" value="Start: Shadow Copy Deletion Alert" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="115" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-39" value="Investigate: • Check vssadmin delete command • User/process" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="215" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-40" value="Unexpected deletion by non-backup admin?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="335" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-41" value="Escalate to Tier 2" style="ellipse;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="455" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-42" value="Close as approved maintenance task" style="ellipse;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1335" y="455" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-43" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-38" target="nuzdP0fvSrZEVlk6rXL_-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-44" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-39" target="nuzdP0fvSrZEVlk6rXL_-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-45" value="Yes" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-40" target="nuzdP0fvSrZEVlk6rXL_-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-46" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="nuzdP0fvSrZEVlk6rXL_-40" target="nuzdP0fvSrZEVlk6rXL_-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-47" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Failed RDP Logon (Rule 100010)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="-620" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-48" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;GPO Modification (Rule 100014)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="-620" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-49" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;PowerShell Encoded Command (Rule 100102)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="-590" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-50" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;LSASS Access Attempt (Rule 100100)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="435" y="30" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nuzdP0fvSrZEVlk6rXL_-51" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Shadow Copy Deletion (Rule 100104)&lt;/b&gt;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="30" width="440" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

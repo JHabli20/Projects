@@ -69,6 +69,5 @@ This repository demonstrates my **practical skills in SOC operations, Blue Team 
 
 📬 **Let’s Connect:**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2)](https://www.linkedin.com/in/jad-habli/) 
-[![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000)](https://github.com/JHabli20)
 
 ---

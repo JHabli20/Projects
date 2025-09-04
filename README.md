@@ -7,9 +7,9 @@ This collection highlights **hands-on projects**.
 ---
 
 ## 📑 Table of Contents
-1. [SOCaaS (SOC-as-a-Service)](#-socaaS-soc-as-a-service)
-2. [Secure Hotel Network (Packet Tracer)](#-secure-hotel-network-packet-tracer)
-3. [Blockchain-Enabled Medical Report Management](#-blockchain-enabled-medical-report-management)
+1. [SOCaaS (SOC-as-a-Service)](#1-socaas-soc-as-a-service)
+2. [Secure Hotel Network (Packet Tracer)](#2-secure-hotel-network-packet-tracer)
+3. [Blockchain-Enabled Medical Report Management](#3-blockchain-enabled-medical-report-management)
 4. [About](#-about)
 
 ---
